@@ -34,29 +34,5 @@ app.get("/", (req, res) => {
     });
 });
 
-// app.get("/v1/posts", (req, res) => res.status(200).send(data));
-
-// app.get("/v2/posts", (req, res) => {
-//   Videos.find((err, data) => {
-//     if (err) {
-//       res.status(500).send(err);
-//     } else {
-//       res.status(200).send(data);
-//     }
-//   });
-// });
-
-// app.post("/v2/posts", (req, res) => {
-//   // adding data to database
-//   const dbVideos = req.body;
-//   Videos.create(dbVideos, (err, data) => {
-//     if (err) {
-//       res.status(500).send(err);
-//     } else {
-//       res.status(201).send(data);
-//     }
-//   });
-// });
-
 // listen
 app.listen(port, () => console.log(`listining on localhost : ${port}`));
